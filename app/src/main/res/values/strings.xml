@@ -1,0 +1,89 @@
+<resources>
+    <!-- String principal, nome do APP -->
+    <string name="app_name">IPotato</string>
+
+    <!-- String's da página de Login -->
+    <string name="textview_nome_aplicativo_page_login">IPotato</string>
+    <string name="content_description_icone_principal"> ImageView do icone principal da página de login </string>
+    <string name="hint_edittext_nome_usuario">Nome de Usuário</string>
+    <string name="hint_edittext_senha_usuario">Senha</string>
+    <string name="button_login">Login</string>
+    <string name="button_registrar">Registrar-se</string>
+    <string name="button_popular_bd">Popular BD</string>
+
+    <!-- Strings do NavigationDrawer -->
+    <string name="open">Abre a navegação</string>
+    <string name="close">Fecha a navegação</string>
+    <string name="textview_nome_aplicativo_page_navdrawer">IPotato</string>
+    <string name="title_button_novo_pedido">Novo Pedido</string>
+    <string name="title_button_historico_pedidos">Histórico de Pedidos</string>
+    <string name="title_button_gerenciar_cardapio">Gerenciar Cardápio</string>
+    <string name="title_button_sair">Sair</string>
+
+    <!-- String's da página de registro de usuário -->
+    <string name="textview_nome_aplicativo_page_registrar">IPotato</string>
+    <string name="textview_novo_usuario_page_registrar">Novo Usuário</string>
+    <string name="hint_edittext_nome_completo_page_registrar">Nome Completo</string>
+    <string name="hint_edittext_email_page_registrar">E-mail</string>
+    <string name="hint_edittext_nome_usuario_page_registrar">Nome de Usuário</string>
+    <string name="hint_edittext_senha_page_registrar">Senha</string>
+    <string name="hint_edittext_confirmar_senha_page_registrar">Confirmar Senha</string>
+    <string name="button_registrar_page_registrar">Registrar</string>
+    <string name="text_view_ano_desenvolvimento">© 2022</string>
+
+    <!-- String's da página de iniciar pedido -->
+    <string name="textview_bem_vindo_page_iniciar_pedido">Bem vindo,</string>
+    <string name="textview_promocao_page_iniciar_pedido">EM PROMOÇÃO:</string>
+    <string name="imageview_contentdescription_iconeanuncio">Image View do Icone de Anúncio</string>
+    <string name="imageview_contentdescription_iconesale">Image View do Icone de Sale</string>
+    <string name="imageview_contentdescription_iconepromocao">Image View do Icone de Promoção</string>
+    <string name="button_iniciar_pegido_page_iniciar_pedido">Iniciar Pedido</string>
+
+    <!-- String's da página de Cardápio (fragmento item_batata) -->
+    <string name="button_adicionar_qtde_item">+</string>
+    <string name="content_description_imageview_produto">Icone do produto</string>
+    <string name="txt_nome_produto">Nome do produto</string>
+    <string name="txt_preco_produto">R$ 20,00</string>
+    <string name="txt_button_remover_qtde_item">-</string>
+    <string name="txt_button_adicionar_qtde_item">+</string>
+
+    <!-- Strings da página de cadstro de produto -->
+    <string name="hint_edittext_nome_produto_cadastro">Nome do Produto</string>
+    <string name="hint_edittext_descricao_produto_cadastro">Descrição do Produto</string>
+    <string name="hint_edittext_preco_produto_cadastro">Preço</string>
+    <string name="hint_edittext_desconto_produto_cadastro">% Desconto</string>
+    <string name="cd_imageview_button_inserir_foto">Botão para inserir imagem do produto</string>
+    <string name="txtview_label_button_inserir_foto">Imagem do Produto\n(Clique para Escolher)</string>
+    <string name="button_cadastrar_produto">Cadastrar</string>
+
+    <!-- Strings da página de carrinho -->
+    <string name="txt_total">Total: R$</string>
+    <string name="txt_forma_de_pagamento">Forma de Pagamento</string>
+    <string name="txt_radioButton_dinheiro">Dinheiro</string>
+    <string name="txt_radioButton_cartaoCredito">Cartão de Crédito</string>
+    <string name="txt_radioButton_cartaoDebito">Cartão de Débito</string>
+    <string name="txtBox_enderecoDeEntrega">Endereço de Entrega</string>
+    <string name="txt_enderecoDeEntrega">Endereço de Entrega</string>
+    <string name="button_fecharPedido">Fechar Pedido</string>
+
+    <!--String's da caixa de diálogo para excluir produto-->
+    <string name="title_alert_dialog">EXCLUIR</string>
+    <string name="alert_dialog_warning">Deseja realmente remover o contato? </string>
+    <string name="alert_dialog_confirmar">DELETAR</string>
+    <string name="alert_dialog_cancelar">CANCELAR</string>
+
+    <!-- String's do layout de iten's em promoção -->
+    <string name="txtview_nome_produto_promo">Nome Produto</string>
+    <string name="txtview_preco_produto_promo">R$</string>
+    <string name="cd_imagem_produto_promo">Imagem do produto em promoção</string>
+    <string name="button_adc_produto_carrinho_promo">+</string>
+
+    <!-- String's do layout de gerenciar cardapio -->
+    <string name="cd_imageview_produto_gerenciar_produto">Imagem do produto que está editado</string>
+    <string name="cd_imageview_button_editar_produto">Imagem do botão para editar o cadastro do produto</string>
+    <string name="cd_imageview_button_excluir_produto">Imagem do botão para excluir o produto</string>
+
+    <!-- String padrão quando um fragmento é criado -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

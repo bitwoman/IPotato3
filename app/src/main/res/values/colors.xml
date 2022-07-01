@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <!--<color name="purple_500">#FF6200EE</color>-->
+    <!--<color name="purple_700">#FF3700B3</color>-->
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Cores personalizadas -->
+
+    <!-- PÁGINA DE LOGIN -->
+
+    <!-- Cor do Hint da verificação do EditText -->
+    <color name="vermelho_hint_edittext_verificacao">#c62828</color>
+
+    <!-- Cor do textview do título do aplicativo - Página de Login -->
+    <color name="vermelho_titulo_app_page_login">#f44336</color>
+
+    <!-- Cor do textview do botão popular db - Página de Login -->
+    <color name="vermelho_textview_button_popular_db">#f44336</color>
+
+    <!-- Cor do botão de login - Página de Login-->
+    <color name="vermelho_botão_login">#c62828</color>
+
+    <!-- Cor do botão de registrar - Página de Login-->
+    <color name="vermelho_botao_registrar">#c62828</color>
+
+    <!--Cor da barra de notificações do celular (acima do aplicativo) -->
+    <color name="amarelo_barra_notificacoes_celular">#ffc107</color>
+
+    <!-- Cor dos edit's text's - Página de Login -->
+    <color name="silver_edit_text_layout">#C0C0C0</color>
+
+
+    <!-- PÁGINA DE REGISTRO DE USUÁRIOS -->
+    <!-- Cor do textview do título do aplicativo - Página de Registro de Usuários -->
+    <color name="vermelho_titulo_app_page_registrar_usuario">#f44336</color>
+
+    <!-- Cor do textview da label novo usuário- Página de Registro de Usuários -->
+    <color name="vermelho_da_label_nu_page_registrar_usuario">#f44336</color>
+
+    <!-- Cor do botão de registrar - Página de Registro de Usuário -->
+    <color name="vermelho_botão_registrar_page_registrar_usuario">#c62828</color>
+
+
+    <!-- PÁGINA DE INICIAR PEDIDOS -->
+    <!-- Cor da caixa de promoção - Página de Iniciar Pedidos -->
+    <color name="silver_layout_box_promocao">#C0C0C0</color>
+
+    <!-- Cor do botão de iniciar pedido - Página de Iniciar Pedido -->
+    <color name="vermelho_botão_iniciar_pedido">#c62828</color>
+
+    <!-- Cor do textview de promoção - Página de Iniciar Pedidos -->
+    <color name="vermelho_textview_em_promocao">#f44336</color>
+
+    <!-- Cor do textview de promoção - Página de Iniciar Pedidos -->
+    <color name="vermelho_textview_bem_vindo">#f44336</color>
+
+
+    <!-- PÁGINA DE CARDÁPIO -->
+    <color name="amarelo_botao_adicionar_qtde_item">#ffc107</color>
+
+
+    <!-- PÁGINA DO NAVDRAWER -->
+    <color name="amarelo_txtview_nome_navdrawer">#FFD607</color>
+
+
+    <!-- PÁGINA DE CADASTRO DO PRODUTO -->
+    <color name="vermelho_botão_cadastrar_produto">#c62828</color>
+
+
+    <color name="vermelho_crimson_principal">#f44336</color>
+    <color name="vermelho_crimson_secundario">#c62828</color>
+    <color name="amarelo_barra_notificacoes_primario">#ffee58</color>
+
+</resources>
