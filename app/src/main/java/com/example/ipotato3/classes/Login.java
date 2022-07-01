@@ -79,7 +79,8 @@ public class Login extends Fragment implements View.OnClickListener{
                     editTextSenhaUsuario.setHint("Campo obrigatório!");
                     editTextSenhaUsuario.setHintTextColor(this.getResources().getColor(R.color.vermelho_hint_edittext_verificacao));
                 } else{
-                    navController.navigate(R.id.action_login_to_iniciarPedido);
+//                    navController.navigate(R.id.action_login_to_iniciarPedido);
+                    getParentFragmentManager().beginTransaction().replace(R.id.fragmentContainerView, IniciarPedido.class, null).addToBackStack(null).commit();
 //                    //Validação se as credenciais de login existem no banco de dados, se sim, o usuário será logado.
 //                    String nomeUsuario = editTextNomeUsuario.getText().toString().trim();
 //                    String senhaUsuario = editTextSenhaUsuario.getText().toString().trim();
@@ -95,7 +96,8 @@ public class Login extends Fragment implements View.OnClickListener{
                 break;
 
             case R.id.idButtonRegistrar:
-                navController.navigate(R.id.action_login_to_cadastroDeUsuario); //alterar
+//                navController.navigate(R.id.action_login_to_cadastroDeUsuario); //alterar
+                getParentFragmentManager().beginTransaction().replace(R.id.fragmentContainerView, CadastroDeUsuario.class, null).addToBackStack(null).commit();
             case R.id.idButtonPopularBanco:
 //                tabelaProduto.popularBD();
                 break;

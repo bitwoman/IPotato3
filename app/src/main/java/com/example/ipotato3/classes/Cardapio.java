@@ -20,11 +20,10 @@ import android.widget.Toast;
 
 import java.util.List;
 
-public class Cardapio extends Fragment implements BackKeyPressedListener {
+public class Cardapio extends Fragment {
 
-    //Atributos
-    public static BackKeyPressedListener listener; //Instanciando a classe para poder implementa-lá e utiliza-lá
 
+    //Construtor
     public Cardapio() {
 
     }
@@ -52,20 +51,6 @@ public class Cardapio extends Fragment implements BackKeyPressedListener {
         return view;
     }
 
-
-    //Estados das páginas no android
-    @Override
-    public void onPause() {
-        listener = null;
-        super.onPause();
-    }
-
-    @Override
-    public void onResume() {
-        super.onResume();
-        listener = this; //página atual
-    }
-
     ////    Método responsável pela ação de fechar o menu caso o usuário aperte o botão de "voltar" no Android - ao invés de fechar o App ou voltar para alguma outra aba.
 //    public void onBackPressed() {
 ////        if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
@@ -73,16 +58,6 @@ public class Cardapio extends Fragment implements BackKeyPressedListener {
 ////        } else {
 ////            onBackPressed();
 ////        }
-////
-//
-//        Toast.makeText(getContext(), "TO AQUI NO CARDAPIO", Toast.LENGTH_SHORT).show();
 //    }
 
-    @Override
-    public void onBackPressed() {
-        getParentFragmentManager()
-                .beginTransaction()
-                .replace(R.id.fragmentContainerView, IniciarPedido.class, null)
-                .commit();
-    }
 }
