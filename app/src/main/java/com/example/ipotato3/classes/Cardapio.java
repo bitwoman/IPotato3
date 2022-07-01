@@ -1,6 +1,8 @@
 package com.example.ipotato3.classes;
 
 import android.os.Bundle;
+
+import androidx.activity.OnBackPressedDispatcherOwner;
 import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,6 +10,7 @@ import android.view.ViewGroup;
 import com.example.ipotato3.R;
 import com.example.ipotato3.adapters.ProdutoAdapter;
 import com.example.ipotato3.daos.ProdutoDAO;
+import com.example.ipotato3.interfaces.BackKeyPressedListener;
 import com.example.ipotato3.models.Produto;
 
 import androidx.annotation.NonNull;
@@ -17,7 +20,10 @@ import android.widget.Toast;
 
 import java.util.List;
 
-public class Cardapio extends Fragment {
+public class Cardapio extends Fragment implements BackKeyPressedListener {
+
+    //Atributos
+    public static BackKeyPressedListener listener; //Instanciando a classe para poder implementa-lá e utiliza-lá
 
     public Cardapio() {
 
@@ -44,5 +50,39 @@ public class Cardapio extends Fragment {
         listaProdutos.setAdapter(adaptador);
 
         return view;
+    }
+
+
+    //Estados das páginas no android
+    @Override
+    public void onPause() {
+        listener = null;
+        super.onPause();
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        listener = this; //página atual
+    }
+
+    ////    Método responsável pela ação de fechar o menu caso o usuário aperte o botão de "voltar" no Android - ao invés de fechar o App ou voltar para alguma outra aba.
+//    public void onBackPressed() {
+////        if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
+////            drawerLayout.closeDrawer(GravityCompat.START);
+////        } else {
+////            onBackPressed();
+////        }
+////
+//
+//        Toast.makeText(getContext(), "TO AQUI NO CARDAPIO", Toast.LENGTH_SHORT).show();
+//    }
+
+    @Override
+    public void onBackPressed() {
+        getParentFragmentManager()
+                .beginTransaction()
+                .replace(R.id.fragmentContainerView, IniciarPedido.class, null)
+                .commit();
     }
 }

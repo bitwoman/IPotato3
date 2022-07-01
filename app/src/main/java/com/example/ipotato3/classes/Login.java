@@ -79,7 +79,7 @@ public class Login extends Fragment implements View.OnClickListener{
                     editTextSenhaUsuario.setHint("Campo obrigatório!");
                     editTextSenhaUsuario.setHintTextColor(this.getResources().getColor(R.color.vermelho_hint_edittext_verificacao));
                 } else{
-                    navController.navigate(R.id.action_login_to_cardapio);
+                    navController.navigate(R.id.action_login_to_iniciarPedido);
 //                    //Validação se as credenciais de login existem no banco de dados, se sim, o usuário será logado.
 //                    String nomeUsuario = editTextNomeUsuario.getText().toString().trim();
 //                    String senhaUsuario = editTextSenhaUsuario.getText().toString().trim();
