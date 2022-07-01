@@ -13,10 +13,22 @@
         <action
             android:id="@+id/action_login_to_cardapio"
             app:destination="@id/cardapio" />
+        <action
+            android:id="@+id/action_login_to_cadastroDeUsuario"
+            app:destination="@id/cadastroDeUsuario" />
     </fragment>
     <fragment
         android:id="@+id/cardapio"
         android:name="com.example.ipotato3.classes.Cardapio"
         android:label="fragment_cardapio"
         tools:layout="@layout/fragment_cardapio" />
+    <fragment
+        android:id="@+id/cadastroDeUsuario"
+        android:name="com.example.ipotato3.classes.CadastroDeUsuario"
+        android:label="fragment_cadastro_de_usuario"
+        tools:layout="@layout/fragment_cadastro_de_usuario" >
+        <action
+            android:id="@+id/action_cadastroDeUsuario_to_login"
+            app:destination="@id/login" />
+    </fragment>
 </navigation>

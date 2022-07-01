@@ -95,9 +95,7 @@ public class Login extends Fragment implements View.OnClickListener{
                 break;
 
             case R.id.idButtonRegistrar:
-//                navController.navigate(R.id.action_login_to_cadastro); //alterar
-                break;
-
+                navController.navigate(R.id.action_login_to_cadastroDeUsuario); //alterar
             case R.id.idButtonPopularBanco:
 //                tabelaProduto.popularBD();
                 break;
