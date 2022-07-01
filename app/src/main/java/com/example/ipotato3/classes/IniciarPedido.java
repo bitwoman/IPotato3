@@ -21,7 +21,7 @@ import com.example.ipotato3.R;
 import com.example.ipotato3.interfaces.BackKeyPressedListener;
 import com.google.android.material.navigation.NavigationView;
 
-public class IniciarPedido extends Fragment implements View.OnClickListener, BackKeyPressedListener {
+public class IniciarPedido extends Fragment implements View.OnClickListener {
 
     //Atributos
     NavController navController;
@@ -65,6 +65,7 @@ public class IniciarPedido extends Fragment implements View.OnClickListener, Bac
         getParentFragmentManager()
                 .beginTransaction()
                 .replace(R.id.fragmentContainerView, Cardapio.class, null)
+                .addToBackStack(null) //Ele adiciona o fragmento numa "pilha" e depois vai voltando uma a uma
                 .commit();
     }
 
@@ -74,20 +75,6 @@ public class IniciarPedido extends Fragment implements View.OnClickListener, Bac
 //    }
 
 
-    //Estados das páginas no android
-    @Override
-    public void onPause() {
-        listener = null;
-        super.onPause();
-    }
-
-    @Override
-    public void onResume() {
-        super.onResume();
-
-        listener = this; //página atual
-    }
-
     ////    Método responsável pela ação de fechar o menu caso o usuário aperte o botão de "voltar" no Android - ao invés de fechar o App ou voltar para alguma outra aba.
 //    public void onBackPressed() {
 //        if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
@@ -95,22 +82,5 @@ public class IniciarPedido extends Fragment implements View.OnClickListener, Bac
 //        } else {
 //            onBackPressed();
 //        }
-//        if(Cardapio.listener != null){
-//            Cardapio.listener.onBackPressed();
-//        }else{
-//            getParentFragmentManager()
-//                .beginTransaction()
-//                .replace(R.id.fragmentContainerView, IniciarPedido.class, null)
-//                .commit();
-//        }
 //    }
-
-    @Override
-    public void onBackPressed() {
-        if(Cardapio.listener!=null){
-            Cardapio.listener.onBackPressed();
-        }else{
-            Toast.makeText(getContext(), "OIEEE", Toast.LENGTH_SHORT).show();
-        }
-    }
 }
